@@ -56,6 +56,7 @@
                                     <li>문의</li>
                                 </ul>
                             </li>
+                            <li class="hoverBar"></li>
                         </ul>
                     </div>
 
@@ -232,6 +233,24 @@
                             }
                         }
                         $('.search img').on('click', openSearch)
+
+                        // nav hoverbar
+                        $('#testObj #header .nav .depth1').hover(
+                            function(){
+                                var w = $(this).innerWidth()
+                                var l = $(this).position().left
+                                $(this).siblings('.hoverBar').stop().animate({
+                                    width: w,
+                                    left: l
+                                }, 500)
+                            },
+                            function(){
+                                $(this).siblings('.hoverBar').stop().animate({
+                                    width: 0,
+                                    left: 0
+                                }, 500)
+                            }
+                        )
                     })(jQuery)
                 </script>
             </div> 
@@ -293,8 +312,17 @@
             <div class="pattern"></div>
             <div class="mainVideo player"></div>
             <div class="mobileVideo">
+                <!-- 유튜브 불러오기 방식 -->
                 <!-- <iframe src="https://www.youtube.com/embed/-OykgAaaxHQ?controls=0&mute=1&loop=1&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+                <!-- gif 방식 -->
                 <img src="../images/mobile_gif_01.gif" alt="">
+
+                <!-- jpg 슬라이드 방식 -->
+                <!-- <img src="../images/travel_sub_shop_04.jpg" alt="">
+                <img src="../images/travel_sub_shop_03.jpg" alt="">
+                <img src="../images/travel_sub_shop_02.jpg" alt="">
+                <img src="../images/travel_sub_shop_01.jpg" alt=""> -->
             </div>
             <!-- <video muted autoplay loop src="../video/video02.mp4"></video> -->
         </figure>
