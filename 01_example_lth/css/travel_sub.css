@@ -28,7 +28,7 @@
 #header .nav { position: absolute; width: 60%; top: 0; left: 50%; transform: translateX(-50%); text-align: center; }
 #header .nav .depth1 { display: inline-block; color: #fff; font-size: 1.2rem; padding: 0 38px; position: relative; cursor: pointer; }
 #header .nav .depth1.on:before { position: absolute; content: ''; bottom: 0; left: 50%; transform: translateX(-50%); width: 80%; height: 3px; background: #bcd767; }
-#header .nav .depth2 { position: absolute; width: 130%; left: 50%; transform: translateX(-50%); text-align: center; top: 90%; background: #fff; padding: 16px 0; border-radius: 10px; border: 1px solid rgba(130,32,128,.6); display: none; }
+#header .nav .depth2 { position: absolute; width: 130%; left: 50%; transform: translateX(-50%); text-align: center; top: 100%; background: #fff; padding: 16px 0; border-radius: 0 0 10px 10px; border: 1px solid rgba(130,32,128,.6); border-top: none; display: none; }
 #header .nav .depth2 li { line-height: 2.8rem; font-size: 1.1rem; color: #222; cursor: pointer; }
 #header .nav .depth1:hover .depth2 { display: block; }
 #header .nav .depth2 li:hover { color: #bcd767; font-weight: bold; }
