@@ -6,6 +6,8 @@
 #videoBg { position: fixed; width: 100%; height: 100%; }
 #videoBg video { min-width:100%; min-height:100%; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); }
 #videoBg .pattern { width: 100%; height: 100%; background: url(../../images/raster.png) repeat top left; top: 0; left: 0; position: absolute; z-index: 2; }
+#videoBg .mobileVideo { position: relative; width: 100%; height: 100%; background: #000; display: block; display: none; }
+#videoBg .mobileVideo img { position: absolute; height: 100%; width: 100%; }
 
 /* header */
 #testObj { position: absolute; width: 100%; height: 100%; z-index: 2; padding: 0 4%; }
@@ -29,7 +31,6 @@
 #testObj .sns > div { position: relative; width: 42px; height: 42px; background: #e94769; border-radius: 7px;
     margin-top: 11px; }
 #testObj .sns > div img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0.8); }
-
 
 /* container */
 #container .mMainVis { display: none; }
@@ -61,7 +62,8 @@
 }
 
 @media only screen and (max-width: 860px) {
-    .clockBox { display: none; }
+    .mbYTP_wrapper { display: none; }
+    #videoBg .mobileVideo { display: block; }
 
     #footer { top: 0; }
     #footer .companyInfo .copyLogo a { display: inline-block; width: 46%; }
