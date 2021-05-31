@@ -64,6 +64,8 @@
 @media only screen and (max-width: 860px) {
     .mbYTP_wrapper { display: none; }
     #videoBg .mobileVideo { display: block; }
+    
+    #testObj .header .members img:last-child { display: none; }
 
     #footer { top: 0; }
     #footer .companyInfo .copyLogo a { display: inline-block; width: 46%; }
