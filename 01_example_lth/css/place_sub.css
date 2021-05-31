@@ -139,7 +139,7 @@
 
 /* map */
 .location { padding: 60px 0 30px; }
-.location #map { width: 100%; height: 500px; background: #ae4b97; margin-top: 40px; }
+.location #map { width: 100%; height: 500px; background: #fff; margin-top: 40px; }
 
 
 /* footer */
@@ -176,13 +176,23 @@
     #testCont .listBox li:nth-child(3n) { margin-right: 2%; }
     #testCont .listBox li:nth-child(2n) { margin-right: 0; }
     #testCont .listBox li:nth-child(4n) { margin-right: 0; }
+
+    .explan2 .wrap .txtBox { width: 100%; }
+    .explan2 .wrap .imgBox { width: 100%; padding-left: 0; }
+    .explan2 .wrap .txtBox .txt { padding-bottom: 30px; }
+    .explan2 .exTable td:first-child { font-size: 0.9rem; }
+    .explan2 .exTable td:last-child { padding-left: 1rem; }
+
+    .program .wrap > div { width: 100%; }
 }
 
 @media only screen and (max-width: 860px) {
+    .row900 { width: 80%; }
     #testCont .listBox li { width: 100%; }
     #testCont .listBox li:nth-child(3n) { margin-right: 0; }
 
     #footer { top: 0; }
+    #footer .row { width: 98%; }
     #footer .companyInfo .copyLogo a { display: inline-block; width: 46%; }
     #footer .companyInfo .copyLogo a img { width: 100%; }
     #footer .companyInfo .addInfo { font-size: 0.9rem; }
