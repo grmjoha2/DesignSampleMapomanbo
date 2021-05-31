@@ -1,10 +1,14 @@
 마포만보 홈페이지 시안
 <br>
-최종업데이트 2021-05-28
+최종업데이트 2021-05-31
 <br><br>
-첫번째 시안
+첫번째 시안(보라)
 <br>
 https://grmjoha2.github.io/DesignSampleMapomanbo/01_example_lth/
+<br><br>
+첫번째 시안(핑크)
+<br>
+https://grmjoha2.github.io/DesignSampleMapomanbo/01_example_lth(color2)/
 <br><br>
 두번째 시안
 <br>
