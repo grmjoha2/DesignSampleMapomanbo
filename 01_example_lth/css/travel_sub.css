@@ -194,6 +194,7 @@
     
     .thumb .imgBox { width: 100%; margin-right: 0; height: 360px; }
     .thumb .txtBox { width: 100%; margin-top: 50px; }
+    .explan .exTable td:last-child { padding-left: 1rem; }
     
     #testCont .videoHeight { height: 250px; }
     #testCont .addr ul li { width: 33.33%; }
