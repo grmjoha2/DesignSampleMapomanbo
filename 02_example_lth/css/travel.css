@@ -32,13 +32,17 @@
 
 /* video */
 #testCont { position: relative; margin-top: 180px; left: 0; padding-bottom: 50px; }
-#testCont .subVis { height: 400px; background: #e94769; overflow: hidden; position: relative; }
+#testCont .subVis { height: 400px; background: #000; overflow: hidden; position: relative; }
 #testCont .subVis video { width: 100%; }
 #testCont .subVis .pattern { width: 100%; height: 100%; background: url(../../images/raster.png) repeat top left; top: 0; left: 0; position: absolute; }
+.subVis .mobileVideo { position: relative; width: 100%; height: 100%; background: #000; display: block; display: none; }
+.subVis .mobileVideo img { position: absolute; width: 100%; }
+
 /* addr */
 #testCont .addr { width: 100%; height: 60px; line-height: 60px; background: #d9d9da; }
 #testCont .addr ul li { float: left; padding: 0 40px; font-size: 1rem; cursor: pointer; }
 #testCont .addr ul li.on { background: #e94769; color: #fff; }
+
 /* listBox */
 #testCont .listBox h3 { font-size: 2.1rem; text-align: center; color: #ef8da5; padding: 70px 0; letter-spacing: 0; }
 #testCont .listBox li { float: left; width: 32%; margin-right: 2%; margin-bottom: 4%; }
@@ -97,6 +101,14 @@
 }
 
 @media only screen and (max-width: 860px) {
+    .row { width: 90%; }
+
+    #testSub .header .mNavOpen { right: 0; }
+    .mbYTP_wrapper { display: none; }
+    .subVis .mobileVideo { display: block; }
+
+    #testCont .listBox li { padding: 0 0 20px; border-bottom: 1px solid #bbb; margin-bottom: 55px; }
+
     #footer { top: 0; }
     #footer .companyInfo .copyLogo a { display: inline-block; width: 46%; }
     #footer .companyInfo .copyLogo a img { width: 100%; }
